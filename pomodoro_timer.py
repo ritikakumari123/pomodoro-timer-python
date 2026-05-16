@@ -2,15 +2,15 @@ import time
 
 print("POMODORO TIMER")
 
-work = int(input("Enter work time in minutes: "))
-break_time = int(input("Enter break time in minutes: "))
+work = float(input("Enter work time in minutes: "))
+break_time = float(input("Enter break time in minutes: "))
 rounds = int(input("Enter number of rounds: "))
 
 for i in range(rounds):
 
     print(f"\nRound {i+1} Study Time Started!")
 
-    seconds = work * 60
+    seconds = int(work * 60)
 
     while seconds > 0:
 
@@ -29,7 +29,7 @@ for i in range(rounds):
 
         print("\nBreak Time Started!")
 
-        seconds = break_time * 60
+        seconds = int(break_time * 60)
 
         while seconds > 0:
 
